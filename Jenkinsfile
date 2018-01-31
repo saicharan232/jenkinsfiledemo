@@ -6,6 +6,8 @@ pipeline {
 
             steps {
                 //withMaven(maven : 'maven3.3.9') {
+		    bat 'dir'
+		    bat 'mvn -version'
                     bat 'mvn clean compile'
             //   }
 
@@ -19,7 +21,8 @@ pipeline {
 
             steps {
                // withMaven(maven : 'maven3.3.9') {
-                    bat  'mvn test'
+                    
+		    bat  'mvn test'
                // }
             }
         }
