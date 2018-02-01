@@ -7,8 +7,8 @@ pipeline {
             steps {
                 //withMaven(maven : 'maven3.3.9') {
 		     bat 'mvn -version'
-		    bat 'set M2_HOME=C:\learning\software-dump\maven\apache-maven-3.3.9-bin\apache-maven-3.3.9'
-		    bat "set path =%M2_HOME\bin%:%path%"
+		    bat 'set M2_HOME=C:/learning/software-dump/maven/apache-maven-3.3.9-bin/apache-maven-3.3.9'
+		    bat "set path =C:/learning/software-dump/maven/apache-maven-3.3.9-bin/apache-maven-3.3.9bin:%path%"
 		    bat 'mvn -version'
                     bat 'mvn clean compile'
             //   }
